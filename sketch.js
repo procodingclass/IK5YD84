@@ -45,9 +45,7 @@ function setup() {
 
 function draw() {
   background("white");
-  text("Score: " + score, 500, 50);
-  score = score + Math.round(frameCount / 60);
-
+ 
   if (keyDown("space") && trex.y >= 100) {
     trex.velocityY = -12;
   }
